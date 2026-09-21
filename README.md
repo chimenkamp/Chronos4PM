@@ -308,7 +308,7 @@ python -m pip install -e '.[dev]'
 python -m pytest -q
 python -m ruff check .
 python -m ruff format --check .
-python -m mypy src tests examples main.py
+python -m mypy chronos4pm tests examples main.py
 RUN_CHRONOS_INTEGRATION=1 python -m pytest -q
 python -m build
 python -m twine check dist/*
